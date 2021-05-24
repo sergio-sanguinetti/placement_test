@@ -1,0 +1,244 @@
+#prev {
+    display:none;
+}
+
+#start {
+    display:none;
+    width: 90px;
+}
+
+
+.containerQuiz{
+    max-width:1200px;
+    margin: 0 auto;
+    height:600px;
+    width:60%;
+    margin-top: 50px;
+    padding: 0 25px 40px 10px;
+    border-radius:5px;
+    color: #FFFFFF;
+    font-weight: bold;
+  
+}
+
+.img-exam{
+    height: 45vh;
+    border-radius: 2%;
+    background-position: center;
+    background-size: cover ;
+}
+
+img{
+    width:100%
+}
+
+.arrows{
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows li {
+    font-size: 25px;
+    list-style: none;
+    color: rgb(41, 41, 92);
+
+}
+
+.sz-4{
+    font-size:5em;
+}
+ .name {
+   display:flex;
+   color: #145DA0;
+   padding: 10px;
+   text-transform: uppercase;
+
+ }
+
+
+.containerOptions{
+    border:4px solid #ccc;
+    border-radius: 4px;
+    background-color:#ddd;
+    padding: 15px;
+    /* min-height:140px; */
+
+}
+.containerOptions h5{
+    color: rgb(41, 41, 92);
+}
+.options{
+    display: flex;
+    margin: 0.2em 0;
+  
+}
+.options li{
+    margin-left: 20px;
+    list-style: none;
+    color: rgba(83, 76, 76, 0.712);
+}
+
+.options li.option{
+    background-color:rgba(112, 112, 172, 0.616);
+    border-radius:4px;
+    padding:0.2em;
+}
+
+.options li.option.active{
+    background-color: rgb(41, 41, 92);
+    color: #ccc;
+    border-radius:4px;
+    padding:0.2em;
+}
+
+
+
+
+.contenedorPreguntas{
+    border:4px solid #ccc;
+    border-radius: 4px;
+    background-color:rgba(248, 242, 242, 0.74);
+    height: 80vh;
+    padding: 5px;;
+}
+.row{
+    --bs-gutter-x: 0.4rem!important;
+}
+
+.box{
+    /* background-color: red; */
+    width: 100%;
+    height:  90%;
+    overflow: auto;
+  }
+
+
+  #loading {
+    display: none;
+  }
+
+
+
+  /*  SUCCESS*/
+
+
+  .svg-success {
+    display: inline-block;
+    vertical-align: top;
+    height: 35px;
+    width: 35px;
+    padding: 4px;
+    opacity: 1;
+    overflow: visible;
+  }
+  @keyframes success-tick {
+    0% {
+      stroke-dashoffset: 16px;
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 31px;
+      opacity: 1;
+    }
+  }
+  @keyframes success-circle-outline {
+    0% {
+      stroke-dashoffset: 72px;
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 0px;
+      opacity: 1;
+    }
+  }
+  @keyframes success-circle-fill {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .svg-success .success-tick {
+    fill: none;
+    stroke-width: 1px;
+    stroke: #ffffff;
+    stroke-dasharray: 15px, 15px;
+    stroke-dashoffset: -14px;
+    animation: success-tick 450ms ease 1400ms forwards;
+    opacity: 0;
+  }
+  .svg-success .success-circle-outline {
+    fill: none;
+    stroke-width: 1px;
+    stroke: #81c038;
+    stroke-dasharray: 72px, 72px;
+    stroke-dashoffset: 72px;
+    animation: success-circle-outline 300ms ease-in-out 800ms forwards;
+    opacity: 0;
+  }
+  .svg-success .success-circle-fill {
+    fill: #81c038;
+    stroke: none;
+    opacity: 0;
+    animation: success-circle-fill 300ms ease-out 1100ms forwards;
+  }
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    .svg-success .success-tick {
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0;
+      animation: none;
+      opacity: 1;
+    }
+    .svg-success .success-circle-outline {
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0;
+      animation: none;
+      opacity: 1;
+    }
+    .svg-success .success-circle-fill {
+      animation: none;
+      opacity: 1;
+    }
+  }
+  
+
+  .circle {
+      border-radius: 50%;
+      border: 3px solid #ccc;
+      margin-top: 2%;
+      margin-left: 2%;
+      margin-right: 8px;
+      width: 15px;
+      height: 15px;
+   
+  }
+
+  .circle.active {
+    background-color:  rgb(41, 41, 92);;
+  }
+
+
+
+  .box li{
+    display: flex;
+    border-radius: 7px;
+    background-color: #ddd;
+    margin-top: 5px;
+    padding:2px;
+
+  }
+
+  .box li:hover{
+    background-color: rgb(41, 41, 92);
+    transition: 0.9s;
+
+  }
+
+  .box li.activeList {
+    color:  rgb(41, 41, 92);
+  }
+
+  .box li.activeList:hover{
+    color: #fff;
+  }
